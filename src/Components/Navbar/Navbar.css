@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px; /* 70px for the top padding, to account for the navbar height */
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 50px; /* Reduced height */
+}
+
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px; /* Further adjust logo size */
+  margin-right: 8px; /* Reduced margin */
+}
+
+.logo-text {
+  font-size: 1.2rem; /* Slightly smaller font size */
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Further reduced gap between menu items */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem; /* Smaller font size */
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.nav-auth .auth-link {
+  color: white;
+  text-decoration: none;
+  padding: 4px 10px; /* Adjusted padding for smaller buttons */
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.nav-auth .auth-link:hover {
+  background-color: white;
+  color: #333;
+}

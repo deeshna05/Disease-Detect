@@ -1,0 +1,52 @@
+home.css
+
+.home-container {
+  position: relative;
+  text-align: center;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.features-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature {
+  width: 30%;
+  padding: 10px;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.how-it-works {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+}

@@ -1,0 +1,83 @@
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Primary color */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chatbot-icon:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 70px; /* Adjust position above the icon */
+    right: 20px;
+    width: 300px; /* Width of the chatbot */
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevents overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox {
+    max-height: 400px; /* Maximum height for scrolling */
+    overflow-y: auto; /* Scroll if overflow */
+    padding: 10px;
+}
+
+.user-message {
+    background-color: #e7f1ff; /* Light blue for user messages */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.bot-message {
+    background-color: #f1f1f1; /* Light gray for bot messages */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    align-self: flex-start; /* Align bot messages to the left */
+}
+
+.input-box {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Divider between chat and input */
+}
+
+input[type="text"] {
+    flex: 1; /* Take available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between input and button */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border on focus */
+}
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}

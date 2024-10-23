@@ -1,0 +1,110 @@
+/* Hospitals.css */
+
+.hospitals {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('./Emergency.jpeg'); /* Ensure the path is correct */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+h1 {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 2rem; /* Use rem for scalability */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.125rem; /* Use rem for scalability */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#area-select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem; /* Use rem for scalability */
+  color: #555;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+#area-select:focus {
+  border-color: #4caf50; /* Green highlight on focus */
+}
+
+.hospital-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hospital-card {
+  flex: 0 1 30%; /* Adjust to make three cards fit in one row */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hospital-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hospital-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.hospital-card h3 {
+  font-size: 1.375rem; /* Use rem for scalability */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hospital-card p {
+  font-size: 1rem; /* Use rem for scalability */
+  color: #666;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .hospital-card {
+    flex: 0 1 45%; /* Two cards in a row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-card {
+    flex: 0 1 100%; /* Stack cards on small mobile screens */
+  }
+
+  #area-select {
+    max-width: 100%; /* Make dropdown full width on small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  label {
+    font-size: 1rem; /* Adjust label font size for small screens */
+  }
+}
